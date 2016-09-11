@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>t3_blank</name>
-	<version>2.2.3</version>
-	<creationDate>July 22 2016</creationDate>
-	<author>JoomlArt.com</author>
-	<authorEmail>webmaster@joomlart.com</authorEmail>
-	<authorUrl>http://www.t3-framework.org</authorUrl>
-	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
-	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<name>t3_csl</name>
+	<version>2.9.0</version>
+	<creationDate>September 10 2016</creationDate>
+	<author>de Lorm Designs</author>
+	<authorEmail>solutions@delormdesigns.com</authorEmail>
+	<authorUrl>http://www.delormdesigns.com/</authorUrl>
 	<t3>
-		<base>base</base>
+		<base>base-bs3</base>
 	</t3>
 	<description>
 		<![CDATA[
@@ -19,7 +17,7 @@
 				<a href="http://t3-framework.org/"><img src="http://joomlart.s3.amazonaws.com/images/jat3v3-documents/message-installation/logo.png" alt="some_text" width="300" height="99"></a>
 				<h4><a href="http://t3-framework.org/" title="">Home</a> | <a href="http://demo.t3-framework.org/" title="">Demo</a> | <a href="http://t3-framework.org/documentation" title="">Document</a> | <a href="https://github.com/t3framework/t3/blob/master/CHANGELOG.md" title="">Changelog</a></h4>
 				<p> </p>
-				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
+				<span style="color:#FF0000">Note: T3 CSL requires T3 plugin to be installed and enabled.</span><p></p>
 				<p>Copyright 2004 - 2015 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
 			</div>
 			<style>table.adminform{width: 100%;}</style>
@@ -31,26 +29,26 @@
 		<filename>favicon.ico</filename>
 		<filename>index.html</filename>
 		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>templateHook.php</filename>
-		<filename>templateInfo.php</filename>
-		<filename>thememagic.xml</filename>	
-		<folder>css</folder>
 		<folder>etc</folder>
 		<folder>fonts</folder>
 		<folder>html</folder>
-		<folder>images</folder>
+		<folder>css</folder>
 		<folder>js</folder>
 		<folder>less</folder>
 		<folder>language</folder>
+		<folder>images</folder>
 		<folder>tpls</folder>
 	</files>
 	
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_t3_blank.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_t3_blank.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_t3_csl.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_t3_csl.sys.ini</language>
 	</languages>
 
 	<positions>
@@ -59,6 +57,7 @@
 		<position>mainnav</position>
 		<position>navhelper</position>
 		<position>breadcrumbs</position>
+		<position>off-canvas</position>
 		<position>sidebar-1</position>
 		<position>sidebar-2</position>
 		<position>mast-col</position>
@@ -113,7 +112,7 @@
 	</config>
 
 	<updateservers>
-		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
-	</updateservers>	
+		<server type="extension" name="T3 CSL Bootstrap 3 Template">https://raw.githubusercontent.com/delorm-designs/csl-joomla-bs3-template/3.x/manifest.xml</server>
+	</updateservers>
 
 </extension>
